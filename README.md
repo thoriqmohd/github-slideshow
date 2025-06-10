@@ -11,3 +11,34 @@ I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey t
 I'll meet you over there, can't wait to get started!
 
 This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+
+## Running the School App
+
+This repository now includes a small command line application for storing simple
+school records. The CLI is located in the `school_app/` folder.
+
+### Setup
+
+The CLI uses only the Python standard library. Ensure you have Python 3
+installed, then run commands with:
+
+```bash
+python school_app/cli.py --help
+```
+
+### Examples
+
+Add a student and list all students:
+
+```bash
+python school_app/cli.py add_student "Alice" 13
+python school_app/cli.py list_students
+```
+
+The data is stored in `school_app/data.json`. You can edit or delete entries
+using similar commands, for example:
+
+```bash
+python school_app/cli.py edit_student <id> "Alicia" 14
+python school_app/cli.py delete students <id>
+```
